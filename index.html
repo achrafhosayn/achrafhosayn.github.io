@@ -3,15 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Achraf_Hosayn - Personal Portfolio</title>
+  <title>Achraf Hosayn - Portfolio</title>
 
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
   <link rel="stylesheet" href="./assets/css/style.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
@@ -20,233 +16,84 @@
 <main>
 
 <!-- SIDEBAR -->
-<aside class="sidebar" data-sidebar>
+<aside class="sidebar">
 
   <div class="sidebar-info">
+    <img src="./assets/images/my-avatar.png" width="80" alt="profile">
 
-    <figure class="avatar-box">
-      <img src="./assets/images/my-avatar.png" alt="Achraf Hosayn" width="80">
-    </figure>
-
-    <div class="info-content">
-      <h1 class="name">Achraf Hosayn</h1>
-      <p class="title">Student</p>
-    </div>
-
-    <button class="info_more-btn" data-sidebar-btn>
-      <span>Show Contacts</span>
-      <ion-icon name="chevron-down"></ion-icon>
-    </button>
-
-  </div>
-
-  <div class="sidebar-info_more">
-
-    <ul class="contacts-list">
-
-      <li class="contact-item">
-        <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
-        <div class="contact-info">
-          <p class="contact-title">Email</p>
-          <a href="mailto:hosaynachraf@gmail.com" class="contact-link">hosaynachraf@gmail.com</a>
-        </div>
-      </li>
-
-      <li class="contact-item">
-        <div class="icon-box"><ion-icon name="phone-portrait-outline"></ion-icon></div>
-        <div class="contact-info">
-          <p class="contact-title">Phone</p>
-          <a href="tel:+212681710793" class="contact-link">+212 6 81 71 07 93</a>
-        </div>
-      </li>
-
-      <li class="contact-item">
-        <div class="icon-box"><ion-icon name="calendar-outline"></ion-icon></div>
-        <div class="contact-info">
-          <p class="contact-title">Birthday</p>
-          <time>Juillet 24, 2006</time>
-        </div>
-      </li>
-
-      <li class="contact-item">
-        <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
-        <div class="contact-info">
-          <p class="contact-title">Location</p>
-          <address>Meknes, Morocco</address>
-        </div>
-      </li>
-
-    </ul>
-
+    <h1>Achraf Hosayn</h1>
+    <p>Data Analyst Student</p>
   </div>
 
 </aside>
 
-
-<!-- MAIN CONTENT -->
+<!-- CONTENT -->
 <div class="main-content">
 
-<!-- NAVBAR -->
+<!-- NAV -->
 <nav class="navbar">
-  <ul class="navbar-list">
-    <li><button class="navbar-link active" data-nav-link>About</button></li>
-    <li><button class="navbar-link" data-nav-link>Resume</button></li>
-    <li><button class="navbar-link" data-nav-link>Portfolio</button></li>
-    <li><button class="navbar-link" data-nav-link>Contact</button></li>
-  </ul>
+  <button data-nav="about">About</button>
+  <button data-nav="resume">Resume</button>
+  <button data-nav="portfolio">Portfolio</button>
+  <button data-nav="contact">Contact</button>
 </nav>
 
-
 <!-- ABOUT -->
-<article class="about active" data-page="about">
-
-<header>
-  <h2 class="h2 article-title">About me</h2>
-</header>
-
-<section class="about-text">
+<section id="about" class="page active">
+  <h2>About Me</h2>
   <p>
-    I am a Management student at FSJES Meknès, passionate about data, digital skills, and continuous learning.
-    I am currently building my skills in Data Analysis and exploring Artificial Intelligence and Digital Marketing.
-  </p>
-
-  <p>
-    I am developing skills in Excel, Tableau, SQL, and Python through real-world projects focused on startups and economic data.
+    I am a Management student at FSJES Meknès, passionate about Data Analysis and Business Intelligence.
+    I am currently learning Excel, SQL, Python and Tableau through real projects.
   </p>
 </section>
-
-</article>
-
 
 <!-- RESUME -->
-<article class="resume" data-page="resume">
+<section id="resume" class="page">
 
-<header>
-  <h2 class="h2 article-title">Resume</h2>
-</header>
+  <h2>Resume</h2>
 
-<section class="timeline">
+  <h3>Education</h3>
+  <p>Baccalaureate in Economics (2024-2025)</p>
+  <p>FSJES Meknès - Management (2025 - Present)</p>
 
-  <h3 class="h3">Education</h3>
+  <h3>Activities</h3>
+  <p>Scouting activities - teamwork & discipline</p>
+  <p>Cultural association member</p>
 
-  <ol class="timeline-list">
-
-    <li class="timeline-item">
-      <h4>Baccalaureate in Economics</h4>
-      <span>2024 — 2025</span>
-      <p>Studied economics and business fundamentals.</p>
-    </li>
-
-    <li class="timeline-item">
-      <h4>FSJES Meknès - Management</h4>
-      <span>2025 — Present</span>
-      <p>Studying management, accounting, and business concepts.</p>
-    </li>
-
-  </ol>
+  <h3>Skills</h3>
+  <p>Excel - 75%</p>
+  <p>Tableau - 65%</p>
+  <p>Python - 25%</p>
+  <p>SQL - 30%</p>
 
 </section>
-
-<section class="timeline">
-
-  <h3 class="h3">Activities</h3>
-
-  <ol class="timeline-list">
-
-    <li class="timeline-item">
-      <h4>Scouting Activities</h4>
-      <p>Teamwork and discipline development.</p>
-    </li>
-
-    <li class="timeline-item">
-      <h4>Cultural Association</h4>
-      <p>Organizing events and teamwork activities.</p>
-    </li>
-
-  </ol>
-
-</section>
-
-<section class="skill">
-
-  <h3 class="h3">My skills</h3>
-
-  <ul class="skills-list">
-
-    <li>Excel - 75%</li>
-    <li>Tableau - 65%</li>
-    <li>Python (Learning) - 25%</li>
-    <li>SQL (Learning) - 30%</li>
-
-  </ul>
-
-</section>
-
-</article>
-
 
 <!-- PORTFOLIO -->
-<article class="portfolio" data-page="portfolio">
+<section id="portfolio" class="page">
 
-  <header>
-    <h2 class="h2 article-title">Portfolio</h2>
-  </header>
+  <h2>Portfolio</h2>
 
-  <section class="projects">
-
-    <ul class="project-list">
-
-      <li class="project-item active" data-filter-item data-category="data analysis">
-        <a href="#">
-
-          <figure class="project-img">
-            <div class="project-item-icon-box">
-              <ion-icon name="eye-outline"></ion-icon>
-            </div>
-
-            <img src="./assets/images/project-1.jpg" alt="startup analysis" loading="lazy">
-          </figure>
-
-          <h3 class="project-title">Startup Analysis Morocco</h3>
-
-          <p class="project-category">Data Analysis</p>
-
-        </a>
-      </li>
-
-    </ul>
-
-  </section>
-
-</article>
-<!-- CONTACT -->
-<article class="contact" data-page="contact">
-
-<header>
-  <h2 class="h2 article-title">Contact</h2>
-</header>
-
-<section class="contact-form">
-
-  <form class="form">
-
-    <input type="text" placeholder="Full name" required>
-    <input type="email" placeholder="Email" required>
-    <textarea placeholder="Message"></textarea>
-
-    <button type="submit">Send</button>
-
-  </form>
+  <div class="project">
+    <h3>Startup Analysis Morocco</h3>
+    <p>Data Analysis Project</p>
+  </div>
 
 </section>
 
-</article>
+<!-- CONTACT -->
+<section id="contact" class="page">
+
+  <h2>Contact</h2>
+
+  <p>Email: hosaynachraf@gmail.com</p>
+  <p>Phone: +212 6 81 71 07 93</p>
+  <p>Location: Meknes, Morocco</p>
+
+</section>
 
 </div>
 
 </main>
-
-<script src="./assets/js/script.js"></script>
 
 </body>
 </html>
