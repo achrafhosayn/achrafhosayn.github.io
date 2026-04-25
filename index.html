@@ -7,10 +7,10 @@
 
 <style>
 body {
-  font-family: Arial;
   margin: 0;
+  font-family: 'Segoe UI', sans-serif;
   background: #0f172a;
-  color: white;
+  color: #e2e8f0;
 }
 
 /* NAVBAR */
@@ -19,58 +19,89 @@ body {
   justify-content: center;
   background: #020617;
   padding: 15px;
+  border-bottom: 1px solid #1e293b;
 }
 
 .navbar button {
   margin: 0 10px;
-  padding: 10px 15px;
+  padding: 10px 18px;
   background: transparent;
-  color: white;
-  border: 1px solid #334155;
+  color: #94a3b8;
+  border: none;
   cursor: pointer;
-  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar button:hover {
+  color: white;
 }
 
 .navbar button.active {
-  background: #22c55e;
-  color: black;
+  color: #22c55e;
+  border-bottom: 2px solid #22c55e;
 }
 
-/* PAGES */
+/* PAGE */
 .page {
   display: none;
-  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
 }
 
 .page.active {
   display: block;
 }
 
+/* ABOUT */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+}
+
+.about img {
+  width: 200px;
+  border-radius: 20px;
+  border: 3px solid #22c55e;
+}
+
+.about h1 {
+  margin: 0;
+}
+
+.highlight {
+  color: #22c55e;
+}
+
 /* CARD */
 .card {
   background: #020617;
   padding: 25px;
-  margin-top: 20px;
   border-radius: 15px;
-}
-
-/* ABOUT */
-.about-container {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 40px;
-}
-
-.about-container img {
-  width: 180px;
-  border-radius: 20px;
+  margin-top: 20px;
+  border: 1px solid #1e293b;
 }
 
 /* PROJECT */
 .project img {
   width: 100%;
   border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* TITLES */
+h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* LINKS */
+a {
+  color: #22c55e;
+  text-decoration: none;
 }
 </style>
 </head>
@@ -87,19 +118,22 @@ body {
 
 <!-- ABOUT -->
 <div id="about" class="page active">
+  <div class="about">
 
-  <div class="about-container">
+    <img src="./assets/images/my-avatar.png">
 
-    <!-- IMAGE -->
-    <img src="./assets/images/my-avatar.png" alt="Achraf Hosayn">
-
-    <!-- INFO -->
     <div>
       <h1>Achraf Hosayn</h1>
-      <p style="color:#22c55e;">Data Analyst Student</p>
+      <p class="highlight">Aspiring Data Analyst</p>
 
       <p>
-        I am a Management student at FSJES Meknès, passionate about data, digital skills, and continuous learning.
+        I am a Management student at FSJES Meknès, passionate about data analysis,
+        business insights, and digital skills.
+      </p>
+
+      <p>
+        I am building skills in <span class="highlight">Excel, Tableau, SQL, Python</span>
+        through real-world projects.
       </p>
 
       <p>
@@ -108,13 +142,10 @@ body {
         📍 Meknes, Morocco
       </p>
 
-      <a href="https://github.com/achrafhosayn" target="_blank" style="color:#22c55e;">
-        🔗 My GitHub
-      </a>
+      <a href="https://github.com/achrafhosayn" target="_blank">🔗 GitHub Profile</a>
     </div>
 
   </div>
-
 </div>
 
 <!-- RESUME -->
@@ -125,14 +156,15 @@ body {
     <h3>Education</h3>
     <p>Baccalaureate in Economics (2024-2025)</p>
     <p>FSJES Meknès - Management (2025 - Present)</p>
+  </div>
 
+  <div class="card">
     <h3>Skills</h3>
     <p>Excel - 75%</p>
     <p>Tableau - 65%</p>
     <p>Python - 25%</p>
     <p>SQL - 30%</p>
   </div>
-
 </div>
 
 <!-- PORTFOLIO -->
@@ -140,11 +172,10 @@ body {
   <h2>Portfolio</h2>
 
   <div class="card project">
-    <img src="./assets/images/dashboard.png" alt="project">
+    <img src="./assets/images/dashboard.png">
     <h3>Startup Analysis Morocco</h3>
-    <p>Data Analysis Project</p>
+    <p>Data Analysis project using Excel / Tableau</p>
   </div>
-
 </div>
 
 <!-- CONTACT -->
@@ -156,10 +187,8 @@ body {
     <p>Phone: +212 6 81 71 07 93</p>
     <p>Location: Meknes, Morocco</p>
   </div>
-
 </div>
 
-<!-- SCRIPT -->
 <script>
 function showPage(pageId) {
   let pages = document.querySelectorAll(".page");
