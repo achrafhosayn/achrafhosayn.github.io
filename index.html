@@ -44,10 +44,11 @@
 <nav class="navbar">
   <ul class="navbar-list">
 
-    <li><button class="navbar-link active" data-nav-link>About</button></li>
-    <li><button class="navbar-link" data-nav-link>Resume</button></li>
-    <li><button class="navbar-link" data-nav-link>Portfolio</button></li>
-    <li><button class="navbar-link" data-nav-link>Contact</button></li>
+    <!-- مهم: النص خاصو يطابق data-page -->
+    <li><button class="navbar-link active" data-nav-link>about</button></li>
+    <li><button class="navbar-link" data-nav-link>resume</button></li>
+    <li><button class="navbar-link" data-nav-link>portfolio</button></li>
+    <li><button class="navbar-link" data-nav-link>contact</button></li>
 
   </ul>
 </nav>
@@ -97,7 +98,7 @@
 
 </article>
 
-<!-- PORTFOLIO (FIXED) -->
+<!-- PORTFOLIO -->
 <article class="portfolio" data-page="portfolio">
 
   <header><h2>Portfolio</h2></header>
@@ -142,7 +143,12 @@
 
 </main>
 
+<!-- scripts -->
 <script src="./assets/js/script.js"></script>
+
+<!-- مهم باش icons يخدمو -->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>
