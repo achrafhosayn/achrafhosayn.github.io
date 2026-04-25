@@ -1,204 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Achraf Hosayn Portfolio</title>
+  <meta charset="UTF-8">
+  <title>Achraf Hosayn | Data Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background: #0f172a;
-  color: #e2e8f0;
-}
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
 
-/* NAVBAR */
-.navbar {
-  display: flex;
-  justify-content: center;
-  background: #020617;
-  padding: 15px;
-  border-bottom: 1px solid #1e293b;
-}
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: #0f172a;
+      color: white;
+    }
 
-.navbar button {
-  margin: 0 10px;
-  padding: 10px 18px;
-  background: transparent;
-  color: #94a3b8;
-  border: none;
-  cursor: pointer;
-  font-weight: 500;
-  transition: 0.3s;
-}
+    header {
+      text-align: center;
+      padding: 40px;
+      background: #020617;
+    }
 
-.navbar button:hover {
-  color: white;
-}
+    header img {
+      width: 120px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
 
-.navbar button.active {
-  color: #22c55e;
-  border-bottom: 2px solid #22c55e;
-}
+    header h1 {
+      margin: 10px 0;
+    }
 
-/* PAGE */
-.page {
-  display: none;
-  max-width: 1000px;
-  margin: auto;
-  padding: 40px 20px;
-}
+    header a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
 
-.page.active {
-  display: block;
-}
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #020617;
+      padding: 10px;
+    }
 
-/* ABOUT */
-.about {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-  align-items: center;
-}
+    nav button {
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
 
-.about img {
-  width: 200px;
-  border-radius: 20px;
-  border: 3px solid #22c55e;
-}
+    section {
+      display: none;
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
 
-.about h1 {
-  margin: 0;
-}
+    section.active {
+      display: block;
+    }
 
-.highlight {
-  color: #22c55e;
-}
+    .project {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
 
-/* CARD */
-.card {
-  background: #020617;
-  padding: 25px;
-  border-radius: 15px;
-  margin-top: 20px;
-  border: 1px solid #1e293b;
-}
+    .project img {
+      width: 100%;
+      border-radius: 10px;
+    }
 
-/* PROJECT */
-.project img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 10px;
-}
-
-/* TITLES */
-h2 {
-  margin-bottom: 20px;
-  color: white;
-}
-
-/* LINKS */
-a {
-  color: #22c55e;
-  text-decoration: none;
-}
-</style>
+    .contact p {
+      margin: 10px 0;
+    }
+  </style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<div class="navbar">
-  <button onclick="showPage('about')" class="active">About</button>
+<header>
+  <!-- ضع صورتك هنا -->
+  <img src="assets/images/my-avatar.png" alt="Achraf">
+
+  <h1>Achraf Hosayn</h1>
+  <p>Future Data Analyst</p>
+
+  <!-- LinkedIn -->
+  <p>
+    <a href="https://www.linkedin.com/in/achraf-hosayn" target="_blank">
+      LinkedIn Profile
+    </a>
+  </p>
+</header>
+
+<nav>
+  <button onclick="showPage('about')">About</button>
   <button onclick="showPage('resume')">Resume</button>
   <button onclick="showPage('portfolio')">Portfolio</button>
   <button onclick="showPage('contact')">Contact</button>
-</div>
+</nav>
 
 <!-- ABOUT -->
-<div id="about" class="page active">
-  <div class="about">
-
-    <img src="./assets/images/my-avatar.png">
-
-    <div>
-      <h1>Achraf Hosayn</h1>
-      <p class="highlight">Aspiring Data Analyst</p>
-
-      <p>
-        I am a Management student at FSJES Meknès, passionate about data analysis,
-        business insights, and digital skills.
-      </p>
-
-      <p>
-        I am building skills in <span class="highlight">Excel, Tableau, SQL, Python</span>
-        through real-world projects.
-      </p>
-
-      <p>
-        📧 hosaynachraf@gmail.com <br>
-        📱 +212 6 81 71 07 93 <br>
-        📍 Meknes, Morocco
-      </p>
-
-      <a href="https://github.com/achrafhosayn" target="_blank">🔗 GitHub Profile</a>
-    </div>
-
-  </div>
-</div>
+<section id="about" class="active">
+  <h2>About Me</h2>
+  <p>
+    I am a Management student at FSJES Meknès, passionate about data, digital skills, and continuous learning.
+  </p>
+  <p>
+    I am currently building my skills in Data Analysis, Excel, Tableau, SQL, and Python.
+  </p>
+</section>
 
 <!-- RESUME -->
-<div id="resume" class="page">
+<section id="resume">
   <h2>Resume</h2>
 
-  <div class="card">
-    <h3>Education</h3>
-    <p>Baccalaureate in Economics (2024-2025)</p>
-    <p>FSJES Meknès - Management (2025 - Present)</p>
-  </div>
+  <h3>Education</h3>
+  <p>Baccalaureate in Economics (2024 - 2025)</p>
+  <p>FSJES Meknès - Management (2025 - Present)</p>
 
-  <div class="card">
-    <h3>Skills</h3>
-    <p>Excel - 75%</p>
-    <p>Tableau - 65%</p>
-    <p>Python - 25%</p>
-    <p>SQL - 30%</p>
-  </div>
-</div>
+  <h3>Skills</h3>
+  <p>Excel - 75%</p>
+  <p>Tableau - 65%</p>
+  <p>Python - 25%</p>
+  <p>SQL - 30%</p>
+</section>
 
 <!-- PORTFOLIO -->
-<div id="portfolio" class="page">
+<section id="portfolio">
   <h2>Portfolio</h2>
 
-  <div class="card project">
-    <img src="./assets/images/dashboard.png">
+  <div class="project">
+    <img src="assets/images/dashboard.png" alt="Dashboard">
     <h3>Startup Analysis Morocco</h3>
-    <p>Data Analysis project using Excel / Tableau</p>
+    <p>Data Analysis Project using Excel & Tableau</p>
   </div>
-</div>
+</section>
 
 <!-- CONTACT -->
-<div id="contact" class="page">
+<section id="contact" class="contact">
   <h2>Contact</h2>
 
-  <div class="card">
-    <p>Email: hosaynachraf@gmail.com</p>
-    <p>Phone: +212 6 81 71 07 93</p>
-    <p>Location: Meknes, Morocco</p>
-  </div>
-</div>
+  <p>Email: hosaynachraf@gmail.com</p>
+  <p>Phone: +212 6 81 71 07 93</p>
+  <p>Location: Meknes, Morocco</p>
+</section>
 
 <script>
-function showPage(pageId) {
-  let pages = document.querySelectorAll(".page");
-  let buttons = document.querySelectorAll(".navbar button");
-
-  pages.forEach(p => p.classList.remove("active"));
-  buttons.forEach(b => b.classList.remove("active"));
-
-  document.getElementById(pageId).classList.add("active");
-  event.target.classList.add("active");
+function showPage(page) {
+  document.querySelectorAll("section").forEach(sec => {
+    sec.classList.remove("active");
+  });
+  document.getElementById(page).classList.add("active");
 }
 </script>
 
