@@ -13,6 +13,7 @@ body {
   color: white;
 }
 
+/* NAVBAR */
 .navbar {
   display: flex;
   justify-content: center;
@@ -27,6 +28,7 @@ body {
   color: white;
   border: 1px solid #334155;
   cursor: pointer;
+  border-radius: 8px;
 }
 
 .navbar button.active {
@@ -34,24 +36,40 @@ body {
   color: black;
 }
 
+/* PAGES */
 .page {
   display: none;
-  padding: 30px;
+  padding: 40px;
 }
 
 .page.active {
   display: block;
 }
 
+/* CARD */
 .card {
   background: #020617;
-  padding: 20px;
-  margin-top: 15px;
-  border-radius: 10px;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 15px;
 }
 
-img {
-  max-width: 100%;
+/* ABOUT */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+}
+
+.about-container img {
+  width: 180px;
+  border-radius: 20px;
+}
+
+/* PROJECT */
+.project img {
+  width: 100%;
   border-radius: 10px;
 }
 </style>
@@ -59,6 +77,7 @@ img {
 
 <body>
 
+<!-- NAVBAR -->
 <div class="navbar">
   <button onclick="showPage('about')" class="active">About</button>
   <button onclick="showPage('resume')">Resume</button>
@@ -68,54 +87,79 @@ img {
 
 <!-- ABOUT -->
 <div id="about" class="page active">
-  <h2>About Me</h2>
-  <div class="card">
-    <p>
-      I am a Management student at FSJES Meknès, passionate about data, digital skills, and continuous learning.
-    </p>
-    <p>
-      I am building skills in Excel, Tableau, SQL, and Python through real projects.
-    </p>
+
+  <div class="about-container">
+
+    <!-- IMAGE -->
+    <img src="./assets/images/my-avatar.png" alt="Achraf Hosayn">
+
+    <!-- INFO -->
+    <div>
+      <h1>Achraf Hosayn</h1>
+      <p style="color:#22c55e;">Data Analyst Student</p>
+
+      <p>
+        I am a Management student at FSJES Meknès, passionate about data, digital skills, and continuous learning.
+      </p>
+
+      <p>
+        📧 hosaynachraf@gmail.com <br>
+        📱 +212 6 81 71 07 93 <br>
+        📍 Meknes, Morocco
+      </p>
+
+      <a href="https://github.com/achrafhosayn" target="_blank" style="color:#22c55e;">
+        🔗 My GitHub
+      </a>
+    </div>
+
   </div>
+
 </div>
 
 <!-- RESUME -->
 <div id="resume" class="page">
   <h2>Resume</h2>
+
   <div class="card">
     <h3>Education</h3>
     <p>Baccalaureate in Economics (2024-2025)</p>
     <p>FSJES Meknès - Management (2025 - Present)</p>
 
     <h3>Skills</h3>
-    <p>Excel: 75%</p>
-    <p>Tableau: 65%</p>
-    <p>Python: 25%</p>
-    <p>SQL: 30%</p>
+    <p>Excel - 75%</p>
+    <p>Tableau - 65%</p>
+    <p>Python - 25%</p>
+    <p>SQL - 30%</p>
   </div>
+
 </div>
 
 <!-- PORTFOLIO -->
 <div id="portfolio" class="page">
   <h2>Portfolio</h2>
 
-  <div class="card">
+  <div class="card project">
     <img src="./assets/images/dashboard.png" alt="project">
     <h3>Startup Analysis Morocco</h3>
     <p>Data Analysis Project</p>
   </div>
+
 </div>
 
 <!-- CONTACT -->
 <div id="contact" class="page">
   <h2>Contact</h2>
+
   <div class="card">
     <p>Email: hosaynachraf@gmail.com</p>
     <p>Phone: +212 6 81 71 07 93</p>
     <p>Location: Meknes, Morocco</p>
   </div>
+
 </div>
 
+<!-- SCRIPT -->
 <script>
 function showPage(pageId) {
   let pages = document.querySelectorAll(".page");
