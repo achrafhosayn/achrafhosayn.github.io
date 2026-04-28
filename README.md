@@ -1,44 +1,42 @@
-# vCard - Personal portfolio
+# Achraf Hosayn - Data Analyst Portfolio
 
-![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
-![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/codewithsadee/vcard-personal-portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
-[![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
+# 🌐 Website Preview
 
-vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
+![Portfolio Preview](assets/images/preview.png)
 
-## Demo
+This is my personal portfolio website built using HTML, CSS, and JavaScript.
 
-![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
+## 👨‍💻 About Me
 
-## Prerequisites
+I am a Management student at FSJES Meknès with a strong interest in data analysis and business insights.
 
-Before you begin, ensure you have met the following requirements:
+I enjoy transforming raw data into clear and useful insights using tools like Excel and Tableau.
 
-* [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
+I am currently learning SQL and Python to improve my data analysis skills.
 
-## Installing vCard
+## 📊 Project
 
-To install **vCard**, follow these steps:
+### Morocco Startups Analysis
 
-Linux and macOS:
+- Data analysis of Moroccan startups using Tableau
+- Insights on funding stages, sectors, and top cities
+- Interactive dashboard for data visualization
 
-```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+🔗 Project Link:
+https://github.com/achrafhosayn/moroccan-startups-analysis
 
-Windows:
+## 🛠️ Tools & Skills
 
-```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
-```
+- Excel (Data Cleaning, Pivot Tables)
+- Tableau (Dashboards & Visualization)
+- SQL (Basic Queries)
+- Python (Learning - Pandas)
 
-## Contact
+## 📫 Contact
 
-If you want to contact me you can reach me at [Twitter](https://www.x.com/codewithsadee_).
+- Email: hosaynachraf@gmail.com
+- LinkedIn: https://www.linkedin.com/in/achraf-hosayn
 
-## License
+## ⚖️ License
 
-MIT
+This project is based on a template by codewithsadee and is licensed under the MIT License.
